@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/upload_scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/top_main_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/top_bottom" />
+
+        <LinearLayout
+            android:id="@id/area_favLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/list_above"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/area"
+                android:contentDescription="@string/hello" />
+
+            <TextView
+                style="@style/userinfo_font"
+                android:text="所在区域：" />
+
+            <Spinner
+                android:id="@id/area_spinner"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/loc_Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/list_mid"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loc"
+                android:contentDescription="@string/hello" />
+
+            <TextView
+                style="@style/userinfo_font"
+                android:text="地图定位：" />
+
+            <TextView
+                android:id="@id/location_text"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/upload_selectpos"
+                android:textColor="@color/Black"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/detail_favLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/list_mid"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@id/detail_edittext"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="top"
+                android:hint="@string/upload_content_hint"
+                android:minHeight="80.0dip"
+                android:textColor="#000000"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/pictures_favLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/list_mid"
+            android:clickable="false"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btnTakePhoto"
+                    android:layout_width="63.0dip"
+                    android:layout_height="53.0dip"
+                    android:layout_marginRight="30dip"
+                    android:background="@drawable/camera_btn_selector" />
+
+                <Button
+                    android:id="@+id/btnSelectPhoto"
+                    android:layout_width="63.0dip"
+                    android:layout_height="53.0dip"
+                    android:layout_marginLeft="30dip"
+                    android:background="@drawable/selectapic_btn_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/takePhoto_text"
+                    style="@style/userinfo_font"
+                    android:layout_marginRight="30dip"
+                    android:text="@string/upload_takephoto" />
+
+                <TextView
+                    android:id="@id/selectPhoto_text"
+                    style="@style/userinfo_font"
+                    android:layout_marginLeft="30dip"
+                    android:text="@string/upload_selectphoto" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/list_below"
+            android:clickable="true"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@id/do_submit_button"
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="1.0dip"
+                android:background="@drawable/btn_selector2"
+                android:text="提交投诉" >
+            </Button>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="300dip"
+            android:layout_marginTop="5dip"
+            android:maxHeight="450dip" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

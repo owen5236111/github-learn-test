@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res/com.jpe.smt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="10.0dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/welcone_title"
+            android:textAppearance="@style/main_title_style"
+            android:textSize="20.0sp" />
+        <!--
+        <com.echoliv.wuhan.civilcityinspector.CarouselWidget.Carousel
+            android:id="@id/carousel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:animationDuration="200"
+            pj:Items="@array/entries"
+            pj:SelectedItem="0"
+            pj:UseReflection="false" />
+        -->
+
+        <com.jpe.smt.CircleWidget.CircleLayout
+            android:id="@id/carousel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            circle:firstChildPosition="South"
+            circle:isRotating="true"
+            circle:rotateToCenter="true" >
+
+            <!-- circle:circleBackground="@drawable/green"  > -->
+
+            <com.jpe.smt.CircleWidget.CircleImageView
+                android:id="@+id/main_facebook_image"
+                circle:name="园林绿化"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/carouse_1" />
+
+            <com.jpe.smt.CircleWidget.CircleImageView
+                android:id="@+id/main_myspace_image"
+                circle:name="其他设施"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/carouse_6" />
+
+            <com.jpe.smt.CircleWidget.CircleImageView
+                android:id="@+id/main_google_image"
+                circle:name="市政公用设施"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/carouse_2" />
+
+            <com.jpe.smt.CircleWidget.CircleImageView
+                android:id="@+id/main_linkedin_image"
+                circle:name="房屋建筑"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/carouse_3" />
+
+            <com.jpe.smt.CircleWidget.CircleImageView
+                android:id="@+id/main_twitter_image"
+                circle:name="周边雷达"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/carouse_4" />
+
+            <com.jpe.smt.CircleWidget.CircleImageView
+                android:id="@+id/main_wordpress_image"
+                circle:name="道路交通设施"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/carouse_5" />
+        </com.jpe.smt.CircleWidget.CircleLayout>
+
+        <TextView
+            android:id="@+id/main_selected_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </RelativeLayout>
+
+</LinearLayout>

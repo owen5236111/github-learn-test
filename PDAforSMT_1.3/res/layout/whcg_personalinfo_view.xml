@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/top_main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_bottom" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="#ffffffff"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:id="@id/personal_info_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip" >
+
+                    <ImageView
+                        android:id="@id/selfinfo_userIcon"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@string/hello"
+                        android:src="@drawable/portrait" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:contentDescription="@string/hello"
+                        android:src="@drawable/portrait_round" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10.0dip" >
+
+                    <TextView
+                        android:id="@id/selfinfo_userName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dip"
+                        android:text="@string/phoneNumber"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0sp" />
+
+                    <TextView
+                        android:id="@id/selfinfo_userGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/selfinfo_userName"
+                        android:text="@string/nickname"
+                        android:textSize="15.0sp" />
+
+                    <Button
+                        android:id="@id/selfinfo_edit_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/selfinfo_userGender"
+                        android:layout_marginTop="3.0dip"
+                        android:background="@drawable/selfinfo_edit_button"
+                        android:text="@string/selfinfo_edit"
+                        android:textColor="#ffffffff"
+                        android:textSize="11.0sp" />
+
+                    <Button
+                        android:id="@id/do_logout_bt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/selfinfo_userGender"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="3.0dip"
+                        android:layout_toRightOf="@id/selfinfo_edit_bt"
+                        android:background="@drawable/selfinfo_edit_button"
+                        android:text="@string/logout"
+                        android:textColor="#ffffffff"
+                        android:textSize="11.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@id/selfinfo_mytopic"
+                style="@style/selfinfo_num"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/mytopic" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4.0dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@id/selfinfo_submitLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/panel_left_above"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/selfinfo_submited"
+                        style="@style/selfinfo_num"
+                        android:text="@string/zeroVal" />
+
+                    <TextView
+                        style="@style/userinfo_font"
+                        android:text="@string/submit"
+                        android:textColor="@color/submit_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/selfinfo_notcheckLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/panel_right_above"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/selfinfo_notcheck"
+                        style="@style/selfinfo_num"
+                        android:text="@string/zeroVal" />
+
+                    <TextView
+                        style="@style/userinfo_font"
+                        android:text="@string/notcheck"
+                        android:textColor="@color/submit_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@id/selfinfo_checknotpassLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/panel_mid"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/selfinfo_checknotpass"
+                        style="@style/selfinfo_num"
+                        android:text="@string/zeroVal" />
+
+                    <TextView
+                        style="@style/userinfo_font"
+                        android:text="@string/checknotpass"
+                        android:textColor="@color/shehe_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/selfinfo_checkedLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/panel_mid_right"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/selfinfo_ischecked"
+                        style="@style/selfinfo_num"
+                        android:text="@string/zeroVal" />
+
+                    <TextView
+                        style="@style/userinfo_font"
+                        android:text="@string/shenhe"
+                        android:textColor="@color/shehe_color" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@id/selfinfo_doneLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/panel_left_below"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/selfinfo_settled"
+                        style="@style/selfinfo_num"
+                        android:text="@string/zeroVal" />
+
+                    <TextView
+                        style="@style/userinfo_font"
+                        android:text="@string/yichuli"
+                        android:textColor="@color/yichuli_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/selfinfo_scoreLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/panel_right_below"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/selfinfo_score"
+                        style="@style/selfinfo_num"
+                        android:text="@string/zeroVal" />
+
+                    <TextView
+                        style="@style/userinfo_font"
+                        android:text="@string/score"
+                        android:textColor="@color/Black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

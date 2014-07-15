@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/top_main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_bottom" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/floatbg" >
+
+        <RelativeLayout
+            android:id="@id/RelativeLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingTop="14.0dip" >
+
+            <TextView
+                android:id="@id/password_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/reguser_str1"
+                android:textColor="@color/Black"
+                android:textSize="16.0dip" />
+
+            <EditText
+                android:id="@id/phoneNumber_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_hint"
+                android:layout_marginBottom="3.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0sp"
+                android:layout_marginTop="15.0dip"
+                android:hint="请输入密码"
+                android:paddingLeft="60.0sp"
+                android:password="true"
+                android:phoneNumber="true"
+                android:saveEnabled="true" />
+
+            <TextView
+                android:id="@id/TextView01"
+                android:layout_width="70.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/phoneNumber_edittext"
+                android:layout_alignLeft="@id/phoneNumber_edittext"
+                android:layout_alignTop="@id/phoneNumber_edittext"
+                android:layout_marginRight="15.0sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="7.0sp"
+                android:text="@string/new_password"
+                android:textColor="@color/Black"
+                android:textSize="12.0dip" />
+
+            <Button
+                android:id="@id/do_findpwd_button"
+                android:layout_width="230.0dip"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/TextView01"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="14.0dip"
+                android:background="@drawable/btn_selector1"
+                android:text="@string/send_tonumber" />
+
+            <TextView
+                android:id="@id/textview2221"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/do_findpwd_button"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="@string/findpwd_str1"
+                android:textColor="@color/shehe_color" />
+
+            <TextView
+                android:id="@id/textview2222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textview2221"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="25.0dip"
+                android:text="@string/findpwd_str2"
+                android:textColor="@color/shehe_color" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <HorizontalScrollView
+        android:id="@id/lifesocial_layoutBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/item_bar_bg_color"
+        android:orientation="horizontal"
+        android:paddingBottom="2.0dip"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="2.0dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@id/item__layoutBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:orientation="vertical" />
+    </HorizontalScrollView>
+
+</RelativeLayout>

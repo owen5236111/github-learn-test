@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jpe.smt"
+    android:versionCode="1"
+    android:versionName="1" >
+
+    <uses-sdk
+        android:maxSdkVersion="19"
+        android:minSdkVersion="10"
+        android:targetSdkVersion="14" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:logo="@drawable/icon" >
+
+        <!-- 高德地图key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="631675165e07c95476a2dcc56d909368" />
+
+        <activity
+            android:name="com.jpe.smt.activity.SMT_MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_TousuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_DealWithActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_ToPublicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_DetailTopicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_SendCommitsActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_UserloginActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_PersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_RegUserActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_NewsDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_FindPwdActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_CommentRatingActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_ModifypersonalInfoActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_MoreActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.PrepareActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jpe.smt.activity.SMT_ManualActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_UpdatedetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.SMT_GuidanceActicity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.aMap.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.aMap.AroundActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.ImageSanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jpe.smt.activity.ShowImageActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Black">#ff000000</color>
+    <color name="White">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="findpwdcolor">#ff48d1cc</color>
+    <color name="findpwdclickcolor">#ffeeee00</color>
+    <color name="list_title_color">#ff000000</color>
+    <color name="list_desc_color">#ffa5a5a5</color>
+    <color name="item_bar_bg_color">#ffcccccc</color>
+    <color name="item_bar_sel_color">#ffeeee00</color>
+    <color name="submit_color">#ff008000</color>
+    <color name="shehe_color">#ffff0000</color>
+    <color name="yichuli_color">#ff990099</color>
+    <color name="gray">#ffe3e2e2</color>
+
+</resources>

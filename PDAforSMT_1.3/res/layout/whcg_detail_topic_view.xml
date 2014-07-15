@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/White"
+    android:gravity="end" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@id/top_main_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/top_bottom_nobtn" />
+
+            <LinearLayout
+                android:id="@id/loc_Layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@id/topicdetail_title_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="投诉标题"
+                        android:textAppearance="@style/topicdetail_title" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@id/topicdetail_uploadtime_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2012年6月13日 12：00：00"
+                        android:textAppearance="@style/topicdetail_subtitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:text="@string/topicdetail_mode_str"
+                        android:textAppearance="@style/topicdetail_subtitle" />
+
+                    <TextView
+                        android:id="@id/topicdetail_mode_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="智能手机"
+                        android:textAppearance="@style/topicdetail_subtitle" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/topicdetail_type_str"
+                        android:textAppearance="@style/topicdetail_subtitle" />
+
+                    <TextView
+                        android:id="@id/topicdetail_type_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="市政共用设施"
+                        android:textAppearance="@style/topicdetail_subtitle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:text="@string/topicdetail_region_str"
+                        android:textAppearance="@style/topicdetail_subtitle" />
+
+                    <TextView
+                        android:id="@id/topicdetail_region_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="江岸区"
+                        android:textAppearance="@style/topicdetail_subtitle" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/break_line" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/detail_rightimageView2"
+                    android:layout_width="242.7dip"
+                    android:layout_height="150.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:maxHeight="250.0dip"
+                    android:maxWidth="404.5dip"
+                    android:src="@drawable/testfig" />
+
+                <ImageView
+                    android:id="@id/detail_leftimageView"
+                    android:layout_width="242.7dip"
+                    android:layout_height="150.0dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:maxHeight="250.0dip"
+                    android:maxWidth="404.5dip"
+                    android:src="@drawable/testfig" />
+            </RelativeLayout>
+
+            <!--
+            <TableLayout
+                android:id="@id/tableLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:src="@drawable/preview"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:id="@id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@id/detail_leftimageView"
+                        android:layout_width="1.0dip"
+                        android:layout_height="150.0dip"
+                        android:maxHeight="200.0dip"
+                        android:src="@drawable/testfig" />
+
+                    <ImageView
+                        android:id="@id/detail_rightimageView2"
+                        android:layout_width="1.0dip"
+                        android:layout_height="150.0dip"
+                        android:maxHeight="200.0dip"
+                        android:src="@drawable/testfig" />
+                </TableRow>
+                
+            </TableLayout>
+            -->
+
+            <LinearLayout
+                android:id="@id/detail_text_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/topic_detail_webview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="这里是投诉问题正文，这里是投诉问题正文，这里是投诉问题正文" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:paddingTop="5.0dip"
+                android:text="@string/topicdetail_track_str"
+                android:textAppearance="@style/more_layout_title" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@id/track_waitingcheck_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuanjiao_only_one"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/topicdetail_subtime_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text="2001年12月12日 18：00：00"
+                        android:textAppearance="@style/userinfo_font" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingBottom="5.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="@string/topicdetail_track_waitcheck_str"
+                        android:textAppearance="@style/more_layout_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@id/track_checked_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuanjiao_only_one"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/topicdetail_checktime_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text="2000年12月12日 18：00：00"
+                        android:textAppearance="@style/userinfo_font" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingBottom="5.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="@string/topicdetail_track_checked_str"
+                        android:textAppearance="@style/more_layout_title" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@id/track_done_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yuanjiao_only_one"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/topicdetail_donetime_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text="2000年12月12日 18：00：00"
+                        android:textAppearance="@style/userinfo_font" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingBottom="5.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:text="@string/topicdetail_track_done_str"
+                        android:textAppearance="@style/more_layout_title" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@id/btnReturn"
+        style="@style/main_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_selector2"
+        android:text="返回" />
+
+</RelativeLayout>

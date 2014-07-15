@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jpe.smt.widgetScrollView.VerticalScrollview xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/upload_scroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/top_main_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/top_bottom" />
+
+        <LinearLayout
+            android:id="@id/area_favLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/list_above"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/area"
+                android:contentDescription="@string/hello" />
+
+            <TextView
+                style="@style/userinfo_font"
+                android:text="所在区域：" />
+
+            <Spinner
+                android:id="@id/area_spinner"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/loc_Layout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/list_mid"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loc"
+                android:contentDescription="@string/hello" />
+
+            <TextView
+                style="@style/userinfo_font"
+                android:text="地图定位：" />
+
+            <TextView
+                android:id="@id/location_text"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/upload_selectpos"
+                android:textColor="@color/Black"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/detail_favLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/list_mid"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@id/detail_edittext"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:gravity="top"
+                android:hint="@string/upload_content_hint"
+                android:minHeight="100.0dip"
+                android:textColor="#000000"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@id/pictures_favLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/list_below"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@id/rlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+
+                <Button
+                    android:id="@+id/btnTakePhoto"
+                    android:layout_width="63.0dip"
+                    android:layout_height="53.0dip"
+                    android:background="@drawable/camera_btn_selector" />
+
+                <TextView
+                    android:id="@id/takePhoto_text"
+                    style="@style/userinfo_font"
+                    android:layout_below="@id/btnTakePhoto"
+                    android:text="@string/upload_takephoto" />
+
+                <Button
+                    android:id="@+id/btnSelectPhoto"
+                    android:layout_width="63.0dip"
+                    android:layout_height="53.0dip"
+                    android:layout_below="@id/takePhoto_text"
+                    android:layout_marginTop="12.0dip"
+                    android:background="@drawable/selectapic_btn_selector" />
+
+                <TextView
+                    android:id="@id/selectPhoto_text"
+                    style="@style/userinfo_font"
+                    android:layout_below="@id/btnSelectPhoto"
+                    android:text="@string/upload_selectphoto" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@id/tableLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/rlayout"
+                android:layout_toRightOf="@id/rlayout"
+                android:src="@drawable/preview"
+                android:stretchColumns="*" >
+
+                <TableRow
+                    android:id="@id/tableRow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ListView
+                        android:id="@+id/imageView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200.0dip"
+                        android:maxHeight="200.0dip"
+                        android:maxWidth="100.0dip"
+                        android:minHeight="120.0dip" >
+                    </ListView>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@id/do_submit_button"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="提交投诉" >
+
+            <requestFocus />
+        </Button>
+    </LinearLayout>
+
+</com.jpe.smt.widgetScrollView.VerticalScrollview>

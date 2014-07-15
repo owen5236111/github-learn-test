@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnReturn"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@id/top_main_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/top_bottom_nobtn" />
+
+            <RelativeLayout
+                android:id="@id/loc_Layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@id/Titl_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="新闻标题"
+                    android:textAppearance="@style/middle_text_style"
+                    android:textColor="@color/Black" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@id/Titl_text"
+                    android:layout_marginTop="15dip"
+                    android:background="#000000" />
+            </RelativeLayout>
+
+            <!-- 用黄金分割的比例是不是应该好点 -->
+            <!--
+            <ImageView
+                android:id="@id/detail_leftimageView"
+                android:layout_width="242.7dip"
+                android:layout_height="150.0dip"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="5dip"
+                android:maxHeight="250.0dip"
+                android:maxWidth="404.5dip"
+                android:src="@drawable/default_news" />
+            -->
+
+            <com.jpe.smt.widgetCoverFlow.CoverFlow
+                xmlns:coverflow="http://schemas.android.com/apk/res/com.jpe.smt"
+                android:id="@+id/coverflow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                coverflow:imageHeight="150dip"
+                coverflow:imageWidth="100dip">
+                </com.jpe.smt.widgetCoverFlow.CoverFlow>
+
+            <TextView
+                android:id="@+id/news_ptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingTop="10dip"
+                android:text="时间：2014-04-23 15:13:12" />
+
+            <LinearLayout
+                android:id="@id/detail_text_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="5.0dip"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/news_text_detail"
+                    style="@style/news_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="      新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，新闻正文，" />
+            </LinearLayout>
+
+            <view>
+            </view>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@id/btnReturn"
+        style="@style/main_title_style"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_selector2"
+        android:text="返回" />
+
+</RelativeLayout>

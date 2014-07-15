@@ -1,0 +1,894 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>市民投诉</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.1.0.css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.mobile-1.1.0.js"></script>
+<style type="text/css">
+  .tit,.img{ text-align:center; }
+  .cnt{ padding:10px; }
+</style>
+</head> 
+<body>
+<section data-role="page" id="reportPage">
+	<header data-role="header" data-theme="b">
+	<a data-rel="back" data-theme="a">返回首页</a>
+	<h1>市民投诉</h1>
+	</header>
+	<div data-role="content">
+		<ul data-role="listview" data-theme="c">
+  <li><a href="q01.html">01、发现城市道路破损怎么办？</a></li>
+  <li><a href="q02.html">02、发现侵占盲道怎么办？</a></li>
+  <li><a href="q03.html">03、发现桥梁设施破损怎么办？</a></li>
+  <li><a href="q04.html">04、发现私自在交通护栏上“开口子”通行怎么办？</a></li>
+  <li><a href="q05.html">05、发现隧道设施缺失、破损怎么办？</a></li>
+  <li><a href="q06.html">06、发现人行天桥、地下人行通道设施缺失、破损怎么办？</a></li>
+  <li><a href="q07.html">07、发现城市井盖出现问题怎么办？</a></li>
+  <li><a href="q08.html">08、发现障碍墩破损怎么办？</a></li>
+  <li><a href="q09.html">09、发现公共健身设施破损怎么办？</a></li>
+  <li><a href="q10.html">10、发现城市雕像破损怎么办？</a></li>
+  <li><a href="q11.html">11、发现电话亭破损怎么办？</a></li>
+  <li><a href="q12.html">12、发现自来水管破裂、消防栓破损怎么办？</a></li>
+  <li><a href="q13.html">13、发现城市道路渍水怎么办？</a></li>
+  <li><a href="q14.html">14、发现城市道路上有绊脚桩怎么办？</a></li>
+  <li><a href="q15.html">15、发现行道树缺株、病害怎么办？</a></li>
+  <li><a href="q16.html">16、发现破坏、损坏绿化设施怎么办？</a></li>
+  <li><a href="q17.html">17、遇到暴露垃圾怎么办？</a></li>
+  <li><a href="q18.html">18、发现洒水车作业扰民怎么办？</a></li>
+  <li><a href="q19.html">19、发现乱张贴广告、乱设横幅怎么办？</a></li>
+  <li><a href="q20.html">20、发现垃圾容器漫溢、脏污、破损怎么办？</a></li>
+  <li><a href="q21.html">21、发现垃圾收集车存在问题怎么办？</a></li>
+  <li><a href="q22.html">22、发现垃圾转运站脏乱、散发恶臭怎么办？</a></li>
+  <li><a href="q23.html">23、发现公共厕所脏乱、设施破损怎么办？</a></li>
+  <li><a href="q24.html">24、发现当街晾晒怎么办？</a></li>
+  <li><a href="q25.html">25、发现室外空调机占道影响通行怎么办？</a></li>
+  <li><a href="q26.html">26、发现门牌标识错误怎么办？</a></li>
+  <li><a href="q27.html">27、发现违法填湖怎么办？</a></li>
+  <li><a href="q28.html">28、发现自来水水质混浊、有异味怎么办？</a></li>
+  <li><a href="q29.html">29、发现长江、汉江水面有垃圾和废弃物怎么办？</a></li>
+  <li><a href="q30.html">30、发现城市生产噪声扰民怎么办?</a></li>
+  <li><a href="q31.html">31、发现工地施工扰民怎么办？</a></li>
+  <li><a href="q32.html">32、发现娱乐场所噪音扰民怎么办？</a></li>
+  <li><a href="q33.html">33、发现大型空调器（冷却塔）噪音扰民怎么办？</a></li>
+  <li><a href="q34.html">34、发现商业场所高音喇叭、拍掌、大声喧哗揽客扰民怎么办？</a></li>
+  <li><a href="q35.html">35、发现夜间户外公共场所音响器材和家庭室内产生噪音扰民怎么办？</a></li>
+  <li><a href="q36.html">36、发现公园晨（晚）练、演出噪音扰民怎么办？</a></li>
+  <li><a href="q37.html">37、发现餐饮油烟扰民怎么办？</a></li>
+  <li><a href="q38.html">38、发现公交车脏乱、设施不全怎么办？</a></li>
+  <li><a href="q39.html">39、发现公交车越站不停、拒载怎么办？</a></li>
+  <li><a href="q40.html">40、发现公交站牌破损、指示不明、脏乱怎么办？</a></li>
+  <li><a href="q41.html">41、遇到出租车拒载、不打表、绕道怎么办？</a></li>
+  <li><a href="q42.html">42、遇到出租车座椅、座套、扶手等设施残缺破损、脏乱怎么办？</a></li>
+  <li><a href="q43.html">43、发现“黑的”非法营运怎么办？</a></li>
+  <li><a href="q44.html">44、发现轨道交通脏乱、设施不全怎么办？</a></li>
+  <li><a href="q45.html">45、发现轮渡码头脏乱、设施不全怎么办？</a></li>
+  <li><a href="q46.html">46、发现渣土车车轮带泥、车声不洁、沿路抛洒怎么办？</a></li>
+  <li><a href="q47.html">47、发现工地施工不打围，工地围墙、挡板破旧脏乱怎么办？</a></li>
+  <li><a href="q48.html">48、发现电线杆歪斜、倾倒、废弃怎么办？</a></li>
+  <li><a href="q49.html">49、发现违规排放污水、烟尘污染环境怎么办？</a></li>
+  <li><a href="q50.html">50、发现燃气泄漏怎么办？</a></li>
+  <li><a href="q51.html">51、发现城市路灯破损、不亮怎么办？</a></li>
+  <li><a href="q52.html">52、发现交通设施故障怎么办？</a></li>
+  <li><a href="q53.html">53、发现“三车”（摩托车、电动车、残疾人代步车）非法营运怎么办？</a></li>
+  <li><a href="q54.html">54、发现机动车违停怎么办？</a></li>
+  <li><a href="q55.html">55、发现非机动车乱停放怎么办？</a></li>
+  <li><a href="q56.html">56、发现户外广告设施破损，存在安全隐患怎么办？</a></li>
+  <li><a href="q57.html">57、发现违法建筑怎么办？</a></li>
+  <li><a href="q58.html">58、发现占道堆放、占道经营怎么办？</a></li>
+  <li><a href="q59.html">59、发现市民违法饲养家禽怎么办？</a></li>
+  <li><a href="q60.html">60、发现流浪狗怎么办？</a></li>
+  <li><a href="q61.html">61、发现非法贩卖、运输、携带管制刀具怎么办？</a></li>
+  <li><a href="q62.html">62、发现街头流浪乞讨现象怎么办？</a></li>
+  <li><a href="q63.html">63、发现临街门店、单位不执行“门前三包”管理规定怎么办？</a></li>
+  </ul>
+	</div>
+</section>
+
+<!--<section data-role="page" id="q01">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现城市道路破损怎么办</h2>
+		<div class="cnt">市民发现建筑物，非机动车、物品堆放侵占盲道等现象，请拨打市城管局投诉电话：12319</div>
+		<div class="img"><img src="images/01.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q02">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现侵占盲道怎么办</h2>
+		<div class="cnt">市民发现建（构）筑物、非机动车、物品堆放侵占盲道等现象，请拨打市城管局投诉电话：12319。受理后，城管执法人员1小时内到达现场，7天内完成调查取证，作出处理决定。案情特别重大或者复杂的，经批准可以延长处理期限，但最长不得超过15天。</div>
+		<div class="img"><img src="images/02.jpg" /></div>
+	</article>
+</section>
+	
+<section data-role="page" id="q03">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现桥梁设施破损怎么办？</h2>
+		<div class="cnt">市民发现城市桥梁设施有破损现象，请拨打市城管局投诉电话：12319。城管执法人员将在2小时内到达现场，3小时内设置安全警示，1天内采取应急措施，7天内完成修复任务（不包括办理施工行政许可手续时间），重大维修在合理工期内完成修复任务。</div>
+		<div class="img"><img src="images/03.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q04">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现私自在交通护栏上“开口子”通行怎么办？</h2>
+		<div class="cnt">请拨打市公安交管局投诉电话：122、110。交警在1小时内到达现场，作出处理决定。</div>
+		<div class="img"><img src="images/04.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q05">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现隧道设施缺失、破损怎么办？</h2>
+		<div class="cnt">发现长江隧道设施缺失、破损，请拨打隧道公司电话：86702005。其他隧道设施缺失、破损，请拨打市城管局投诉电话：12319。维修人员将在2小时内到达现场，3小时内设置安全警示，1天内采取应急措施，7天内完成修复任务，重大维修在合理工期内完成修复任务。</div>
+		<div class="img"><img src="images/05.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q06">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现人行天桥、地下人行通道设施缺失、破损怎么办？</h2>
+		<div class="cnt">请拨打市城管局投诉电话：12319。维修人员将在2小时内到达现场，3小时内设置安全警示，1天内采取应急措施，7天内完成修复任务，重大维修在合理工期内完成修复任务。</div>
+		<div class="img"><img src="images/06.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q07">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现城市井盖出现问题怎么办？</h2>
+		<div class="cnt">发现城市井盖缺失、破损、沉降、突出等现象，请拨打市城管局投诉电话：12319。城管部门将在半小时内到达现场并设置警示标志，权属单位将在1小时内负责回复，24小时内补齐缺失井盖，48小时内修复破损井盖。</div>
+		<div class="img"><img src="images/07.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q08">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现障碍墩破损怎么办？</h2>
+		<div class="cnt">请拨打市城管局投诉电话：12319。维修人员将在1小时到达现场，2个工作日内处理到位。</div>
+		<div class="img"><img src="images/08.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q09">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">09、发现公共健身设施破损怎么办？</h2>
+		<div class="cnt">请拨打市体育局投诉电话：85578051。维修人员将在1小时内到达现场，2个工作日内处理到位。</div>
+		<div class="img"><img src="images/09.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q10">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">10、发现城市雕像破损怎么办？</h2>
+		<div class="cnt">请拨打市园林局投诉电话：82420382。维修人员将在当天到达现场，2个工作日内处理到位。</div>
+		<div class="img"><img src="images/10.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q11">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现电话亭破损怎么办？</h2>
+		<div class="cnt">请拨打市电信公司投诉电话：10000。维修人员将在1小时内到达现场，2个工作日内处理到位。</div>
+		<div class="img"><img src="images/11.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q12">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现自来水管破裂、消防栓破损怎么办？</h2>
+		<div class="cnt">市民发现自来水管破裂、消防栓破损、请拨打市水务集团投诉电话：96510。维修人员将在半小时内到达现场，2个工作日内处理到位。</div>
+		<div class="img"><img src="images/12.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q13">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现城市道路渍水怎么办？</h2>
+		<div class="cnt">请拨打市水务局投诉电话：82734433。疏捞人员将在半小时那日到达现场，设置安全警示，日常维护问题48小时内解决完毕。</div>
+		<div class="img"><img src="images/13.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q14">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现城市道路上有绊脚桩怎么办？</h2>
+		<div class="cnt">请拨打市民城管局投诉电话：12319。维修人员将在当天到达现场，当天将绊脚桩切除。</div>
+		<div class="img"><img src="images/14.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q15">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现行道树缺株、病害怎么办？</h2>
+		<div class="cnt">请拨打市园林局投诉电话：82420382。养护问题（行道树、绿化带枯死枝等）1个工作日完成清理，病虫害防止在1个工作日内采取措施，重大应急（倒树）1小时内到现场并及时清理，对于缺株在植树节进行补栽。</div>
+		<div class="img"><img src="images/15.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q16">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现破坏、损坏绿化设施怎么办？</h2>
+		<div class="cnt">请拨打市园林局投诉电话：82420382。工作人员将在半小时内到达现场，一般问题2小时处置完毕。</div>
+		<div class="img"><img src="images/16.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q17">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">遇到暴露垃圾怎么办？</h2>
+		<div class="cnt">请拨打市城管局投诉电话：12319。环卫工作人员于当日清洁完毕。</div>
+		<div class="img"><img src="images/17.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q18">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现洒水车作业扰民怎么办？</h2>
+		<div class="cnt">市民发现洒水车有噪音扰民、污水溅射人群或在气温2℃以下洒水等行为时，请拨打市城管局投诉电话：12319。</div>
+		<div class="img"><img src="images/18.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q19">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现乱张贴广告、乱设横幅怎么办？</h2>
+		<div class="cnt">请拨打市城管投诉电话：12319。城管执法人员1小时内到达现场，责令当事人在一日内清除，拒不清除的，三日内强制清除，并予处罚。</div>
+		<div class="img"><img src="images/19.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q20">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现垃圾容器漫溢、脏污、破损怎么办？</h2>
+		<div class="cnt">市民发现果皮箱、垃圾桶、固定式垃圾箱、移动式垃圾箱等垃圾容器有垃圾漫溢、脏污、破损等现象时、请拨打市城管局投诉电话：12319。环卫工作人员将于1小时内处理漫溢的生活垃圾，清洗垃圾容器，破损的垃圾容器于1周内更换。</div>
+		<div class="img"><img src="images/20.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q21">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现垃圾收集车存在问题怎么办？</h2>
+		<div class="cnt">市民发现垃圾收集车存在超载、垃圾漫溢、不密闭运输、车身不洁、乱停放等现象，请拨打市城管局投诉电话：12319。城管工作人员将及时制止违规运输、停放行为、清洁车身。</div>
+		<div class="img"><img src="images/21.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q22">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现垃圾转运站脏乱、散发恶臭怎么办？</h2>
+		<div class="cnt">请拨打市城管局投诉电话：12319。环卫工作人员将于当日开始清洗转运站，3日内消除恶臭现象。</div>
+		<div class="img"><img src="images/22.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q23">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现公共厕所脏乱、设施破损怎么办？</h2>
+		<div class="cnt">市民发现公共厕所脏乱、设施破损现象后，可拨打市城管局投诉电话：12319。受理后，监督管理人员将在1小时内到达现场，督促整改。</div>
+		<div class="img"><img src="images/23.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q24">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现当街晾晒怎么办？</h2>
+		<div class="cnt">市民发现当街晾晒衣物、腊鱼腊肉等有碍市容观瞻现象后，可拨打市民城管局投诉电话：12319。受理后，监督管理人员将在1小时内到达现场，监督整改。</div>
+		<div class="img"><img src="images/24.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q25">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现室外空调机占道影响通行怎么办？</h2>
+		<div class="cnt">市民发现室外空调机占道、影响通行时，可拨打市城管局投诉电话：12319。受理后，城管执法人员将在1小时内到达现场，督促限期整改。</div>
+		<div class="img"><img src="images/25.jpg" /></div>
+	</article>
+</section>
+
+
+
+<section data-role="page" id="q26">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现门牌标识错误怎么办？</h2>
+		<div class="cnt">市民发现门牌标识错误，可拨打市公安局110投诉电话。受理后，民警将在1小时内到达现场，调查核实后，限期整改。</div>
+		<div class="img"><img src="images/26.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q27">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现违法填湖怎么办？</h2>
+		<div class="cnt">市面发现违法填湖现象后，可拨打市水务局投诉电话：82729802.水务执法人员将在1小时内到达现场，调查取证，依法处理。</div>
+		<div class="img"><img src="images/27.jpg" /></div>
+	</article>
+</section>
+
+
+
+<section data-role="page" id="q28">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现自来水水质混浊、有异味怎么办？</h2>
+		<div class="cnt">市民发现自来水水质混浊、有异味，可拨打水务集团供水热线：96510。供水管理人员将在1小时内到达现场，调查核实，迅速整改。</div>
+		<div class="img"><img src="images/28.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q29">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现长江、汉江水面有垃圾和废弃物怎么办？</h2>
+		<div class="cnt">市民发现建筑物，非机动车、物品堆放侵占盲道等现象，请拨打市城管局投诉电话：12319</div>
+		<div class="img"><img src="images/29.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q30">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现城市生产噪声扰民怎么办?</h2>
+		<div class="cnt">市民发现城市生产噪声扰民现象后，可拨打市环保局投诉电话：12369。受理后，环保执法人员将在1小时内到达现场，调查核实后，依法处理。</div>
+		<div class="img"><img src="images/30.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q31">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现工地施工扰民怎么办?</h2>
+		<div class="cnt">市民发现工地施工噪音扰民，可拨打市环保局投诉电话：12369。受理后，环保执法人员将在1小时那日到达现场，调查核实后，依法处理。</div>
+		<div class="img"><img src="images/31.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q32">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现娱乐场所噪音扰民怎么办？</h2>
+		<div class="cnt">市民发现娱乐场所噪音扰民，可拨打环保局投诉电话：12369。受理后，环保执法人员将在1小时内到达现场，调查核实后，依法处理。</div>
+		<div class="img"><img src="images/32.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q33">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现大型空调器（冷却塔）噪音扰民怎么办？</h2>
+		<div class="cnt">市民发现大型空调器（冷却塔）噪音扰民，可拨打市环保局投诉电话：12369。受理后，环保执法人员将在1小时内到达现场，调查核实后，依法处理。</div>
+		<div class="img"><img src="images/33.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q34">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现商业场所高音喇叭、拍掌、大声喧哗揽客扰民怎么办？</h2>
+		<div class="cnt">市民发现商业场所高音喇叭、拍掌、大声喧哗揽客扰民，可拨打市城管局投诉电话：12319。受理后，城管执法人员将在1小时内到达现场，调查核实后，依法处理。</div>
+		<div class="img"><img src="images/34.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q35">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现夜间户外公共场所音响器材和家庭室内产生噪音扰民怎么办？</h2>
+		<div class="cnt">市民发现晚10时至次日6时内，中心城区社会生活噪音扰民，可拨打110报警电话，民警将在1小时内到达现场，依法处理。</div>
+		<div class="img"><img src="images/35.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q36">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现公园晨（晚）练、演出噪音扰民怎么办？</h2>
+		<div class="cnt">市民发现公园晨（晚）练、演出噪音扰民，可拨打市园林局投诉电话：82420382。管理人员将在1小时内到达现场，进行处理。</div>
+		<div class="img"><img src="images/36.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q37">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现餐饮油烟扰民怎么办？</h2>
+		<div class="cnt">市民发现餐饮油烟扰民，可拨打市环保局投诉电话：12369。执法人员在1小时内达现场，作出处理决定。</div>
+		<div class="img"><img src="images/37.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q38">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现公交车脏乱、设施不全怎么办？</h2>
+		<div class="cnt">市民发现公交车脏乱、设施不全，可拨打市公交服务热线：84840555。工作人员调查核实后，及时整改，并向投诉人反馈处理结果。</div>
+		<div class="img"><img src="images/38.jpg" /></div>
+	</article>
+</section>
+	
+<section data-role="page" id="q39">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现公交车越站不停、拒载怎么办？</h2>
+		<div class="cnt">市民发现公交车越站不停、拒载现象，可拨打市公交服务热线：84840555。工作人员调查核实后，按规定处理，并及时向投诉人反馈处理结果。</div>
+		<div class="img"><img src="images/39.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q40">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现公交站牌破损、指示不明、脏乱怎么办？</h2>
+		<div class="cnt">市民发现公交站牌破损、指示不明、脏乱，可拨打市公交服务热心：84840555。工作人员调查核实后，及时整改，并向投诉人反馈处理结果。</div>
+		<div class="img"><img src="images/40.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q41">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">遇到出租车拒载、不打表、绕道怎么办？</h2>
+		<div class="cnt">市民遭遇出租车拒载、不打表、绕道等问题，可拨打市出租车客运管理处投诉中心电话：82633333。工作人员调查核实后，按规定处理，并及时向投诉人反馈处理结果。</div>
+		<div class="img"><img src="images/41.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q42">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">遇到出租车座椅、座套、扶手等设施残缺破损、脏乱怎么办？</h2>
+		<div class="cnt">市民发现出租车座椅、座套、扶手等设施残缺破损、脏乱，可拨打市出租车客运管理处投诉处理中心电话：82633333。工作人员调查核实后，及时整改，并及时向投诉人反馈处理结果。</div>
+		<div class="img"><img src="images/42.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q43">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现“黑的”非法营运怎么办？</h2>
+		<div class="cnt">市民发现“黑的”非法营运，可拨打市出租车客运管理处投诉处理中心电话：82633333。工作人员调查核实后，并及时向投诉人反馈处理结果。</div>
+		<div class="img"><img src="images/43.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q44">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现轨道交通脏乱、设施不全怎么办？</h2>
+		<div class="cnt">市民发现轨道交通脏乱、设施不全，可拨打市地铁集团服务热线：83749240。工作人员调查核实后，及时整改，并向投诉人反馈处理结果。</div>
+		<div class="img"><img src="images/44.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q45">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现轮渡码头脏乱、设施不全怎么办？</h2>
+		<div class="cnt">市民发现轮渡码头脏乱、设施不全，可拨打市轮渡公司服务热线：82782992。工作人员调查核实后，及时整改，并向投诉人反馈处理结果。</div>
+		<div class="img"><img src="images/45.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q46">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现渣土车车轮带泥、车身不洁、沿路抛洒怎么办？</h2>
+		<div class="cnt">市民发现渣土车车轮带泥、车身不洁、沿路抛洒可拨打市城管局投诉电话：12319。
+受理后，城管执法人员将在1小时内到达现场，调查核实后，依法处理。</div>
+		<div class="img"><img src="images/46.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q47">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现工地施工不打围，工地围墙、挡板破旧脏乱怎么办？</h2>
+		<div class="cnt">市民发现工地施工不打围，工地围墙、挡板破旧脏乱，可拨打市城建委投诉电话：85752305。受理后，执法人员将在1小时到达现场，调查核实后，依法处理。
+	市民发现工地施工不打围，工地围墙、挡板破旧脏乱，可拨打市城管局投诉电话：12319。受理后，执法人员将在1小时到达现场，调查核实后，依法处理。</div>
+		<div class="img"><img src="images/47.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q48">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现电线杆歪斜、倾倒、废弃怎么办？</h2>
+		<div class="cnt">市民发现电线杆歪斜、倾倒、废弃，可拨打供电服务热线：95598。供电公司将及时组织人员进行维修。</div>
+		<div class="img"><img src="images/48.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q49">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现违规排放污水、烟尘污染环境怎么办？</h2>
+		<div class="cnt">市民发现违规排放污水、烟尘污染环境，可拨打市环保局环境举报热线：12369。环保监查人员将在2小时内到达现场，并依法处理。</div>
+		<div class="img"><img src="images/49.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q50">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现燃气泄漏怎么办？</h2>
+		<div class="cnt">市民发现燃气泄漏，可拨打市民城管局投诉电话：12319。维修人员将在半小时内到达故障现场，并根据泄漏性质及时完成抢修。</div>
+		<div class="img"><img src="images/50.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q51">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现城市路灯破损、不亮怎么办？</h2>
+		<div class="cnt">市民发现城市路灯破损、不亮，可拨打供电服务热线：95598。维修人员将在2小时内到达故障现场，零星路灯故障2日内修复，成片熄灯故障在次日亮灯前修复。</div>
+		<div class="img"><img src="images/51.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q52">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现交通设施故障怎么办？</h2>
+		<div class="cnt">市民发现交通信号灯熄灯、黑灯、串灯、损坏、歪斜；信号灯杆件损坏、歪斜、损坏、缺失等现象，可拨打市交管局投诉电话：85414444。维修人员将在1小时内到达现场，12小时内完成故障排除，7天内完成修复任务；重大应急维修，3天内完成修复任务。</div>
+		<div class="img"><img src="images/52.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q53">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现“三车”（摩托车、电动车、残疾人代步车）非法营运怎么办？</h2>
+		<div class="cnt">市民发现摩托车、电动车、残疾人代步车非法营运，可拨打交管局投诉电话：85414444。交警在1小时到达现场，依法处理。</div>
+		<div class="img"><img src="images/53.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q54">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现机动车违停怎么办？</h2>
+		<div class="cnt">市民发现机动车违停，可拨打市交管局投诉电话：85414444。交警将在1小时内到达现场，依法查处。</div>
+		<div class="img"><img src="images/54.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q55">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现非机动车乱停放怎么办？</h2>
+		<div class="cnt">市民发现非机动车乱停放，可拨打市城管局投诉电话：12319。城管执法人员将在1小时内到达现场，依法查处。非机动车在人行道（含桥梁人行道）、人行天桥、过街隧道不按规定停放的，处以警告或5元罚款。</div>
+		<div class="img"><img src="images/55.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q56">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现户外广告设施破损，存在安全隐患怎么办？</h2>
+		<div class="cnt">市民发现户外广告设施破损，存在安全隐等问题，可拨打市城管局投诉电话：12319。城管执法人员1小时内到达现场，7天内完成调查取证，作出处理决定。案情特别重大或者复杂的，经批准可以延长处理期限，但最长不得超过15天。</div>
+		<div class="img"><img src="images/56.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q57">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现违法建筑怎么办？</h2>
+		<div class="cnt">市民发现违法建筑，可拨打市城管局投诉电话：12319。城管执法人员将在1小时内到现场，7天内完成调查取证，作出处理决定。案情特别重大或者复杂的，经批准可以延长处理期限，但最长不得超过15天。</div>
+		<div class="img"><img src="images/57.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q58">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现占道堆放、占道经营怎么办？</h2>
+		<div class="cnt">市民发现占道堆放、占道经营，可拨打市城管局投诉电话：12319。城管执法人员将在1小时内到达现场 ，7天内完成调查取证，作出处理决定。案情特别重大或者复杂的，经批准可以延长处理期限，但最长不得超过15天。</div>
+		<div class="img"><img src="images/58.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q59">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现市民违法饲养家禽怎么办？</h2>
+		<div class="cnt">市民发现居民违法饲养家禽污染环境，可拨打市城管局投诉电话：12319。城管执法人员将在1小时内到 达现场，依法进行查处。</div>
+		<div class="img"><img src="images/59.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q60">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现流浪狗怎么办？</h2>
+		<div class="cnt">市民发现流浪狗，可拨打市公安局110报警电话或可直接向当地派出所投诉。报警后公安部门按照《武汉市公安局110出警细节》的有关要求到达现场，并进行处置。</div>
+		<div class="img"><img src="images/60.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q61">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现非法贩卖、运输、携带管制刀具怎么办？</h2>
+		<div class="cnt">市民发现非法贩卖、运输、携带管制刀具，可拨打市公安局110报警电话，民警将在1小时内到达现场，依法查处。</div>
+		<div class="img"><img src="images/61.jpg" /></div>
+	</article>
+</section>
+
+
+<section data-role="page" id="q62">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现街头流浪乞讨现象怎么办？</h2>
+		<div class="cnt">市民发现发现街头流浪乞讨现象，可拨打市民政局为民解困热线：96596。民政局工作人员将及时对其进行救助。</div>
+		<div class="img"><img src="images/62.jpg" /></div>
+	</article>
+</section>
+
+<section data-role="page" id="q63">
+	<header data-role="header" data-theme="b">
+		<a data-rel="back">返回</a>
+		<h1>投诉举报</h1>
+	</header>
+	<article dat-role="content">
+		<h2 class="tit">发现临街门店、单位不执行“门前三包”管理规定怎么办？</h2>
+		<div class="cnt">“门前三包”管理责任制你，是指临街的机关、团体、部队、学校、企业、事业单位、个体工商户和临街的集贸市场的主办单位、临街的建筑工地的建设单位自包门前环境卫生、自包门前绿化管理和自包门前秩序的制度。市民发现临街门店、单位不执行“门前三包”管理规定，可拨打市城管局投诉电话：12319。城管执法人员将在1小时内到现场，依法进行查处。</div>
+		<div class="img"><img src="images/63.jpg" /></div>
+	</article>
+</section>-->
+
+</body>
+</html>

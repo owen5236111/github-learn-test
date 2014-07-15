@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@id/top_main_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/top_bottom_nobtn" />
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/floatbg"
+            android:src="@drawable/preview"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@id/personalcenter_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="30.0dip"
+                    android:background="@drawable/horizonalframe_style"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@id/personalcentericon"
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:src="@drawable/more_personal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_toRightOf="@id/personalcentericon"
+                        android:text="@string/personalcenter"
+                        android:textAppearance="@style/more_layout_title" />
+
+                    <ImageView
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:src="@drawable/triangle" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@id/setting_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="20.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:background="@drawable/horizonalframe_style_top"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:id="@id/settingicon"
+                            android:layout_width="30.0dip"
+                            android:layout_height="30.0dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:src="@drawable/more_setting" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:layout_toRightOf="@id/settingicon"
+                            android:text="@string/setting"
+                            android:textAppearance="@style/more_layout_title" />
+
+                        <ImageView
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:src="@drawable/triangle" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@id/update_line"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginRight="20.0dip"
+                        android:background="@drawable/horizonalframe_style_bot"
+                        android:clickable="true" >
+
+                        <ImageView
+                            android:id="@id/updateicon"
+                            android:layout_width="35.0dip"
+                            android:layout_height="35.0dip"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_marginLeft="2.5dip"
+                            android:layout_marginRight="2.5dip"
+                            android:layout_marginTop="5.0dip"
+                            android:src="@drawable/more_update" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:layout_toRightOf="@id/updateicon"
+                            android:text="@string/update"
+                            android:textAppearance="@style/more_layout_title" />
+
+                        <ImageView
+                            android:layout_width="20.0dip"
+                            android:layout_height="20.0dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginBottom="5.0dip"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="5.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:src="@drawable/triangle" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@id/about_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/horizonalframe_style"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@id/abouticon"
+                        android:layout_width="30.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:src="@drawable/more_about" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:layout_toRightOf="@id/abouticon"
+                        android:text="@string/about"
+                        android:textAppearance="@style/more_layout_title" />
+
+                    <ImageView
+                        android:layout_width="20.0dip"
+                        android:layout_height="20.0dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:src="@drawable/triangle" />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>
